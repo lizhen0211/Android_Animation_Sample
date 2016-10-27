@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PropertyAnimationActivity" />
-        <activity android:name=".ObjectAnimatorActivity"></activity>
+        <activity android:name=".ObjectAnimatorActivity" />
+        <activity android:name=".ValueAnimatorActivity"/>
     </application>
 
 </manifest>
