@@ -27,4 +27,9 @@ public class PropertyAnimationActivity extends AppCompatActivity {
         Intent intent = new Intent(PropertyAnimationActivity.this, AnimatorSetActivity.class);
         startActivity(intent);
     }
+
+    public void onXMLAnimatorClick(View view) {
+        Intent intent = new Intent(PropertyAnimationActivity.this, XMLAnimatorActivity.class);
+        startActivity(intent);
+    }
 }

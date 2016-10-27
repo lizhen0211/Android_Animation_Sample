@@ -43,6 +43,16 @@
                 android:layout_marginTop="30dp"
                 android:onClick="onAnimatorSetClick"
                 android:text="AnimatorSet" />
+
+            <Button
+                android:id="@+id/xml_animator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="onXMLAnimatorClick"
+                android:text="XML Animator" />
         </LinearLayout>
     </ScrollView>
 
