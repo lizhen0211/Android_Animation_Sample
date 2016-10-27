@@ -22,4 +22,9 @@ public class PropertyAnimationActivity extends AppCompatActivity {
         Intent intent = new Intent(PropertyAnimationActivity.this, ValueAnimatorActivity.class);
         startActivity(intent);
     }
+
+    public void onAnimatorSetClick(View view) {
+        Intent intent = new Intent(PropertyAnimationActivity.this, AnimatorSetActivity.class);
+        startActivity(intent);
+    }
 }

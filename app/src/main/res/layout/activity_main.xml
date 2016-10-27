@@ -23,6 +23,26 @@
                 android:layout_marginRight="20dp"
                 android:onClick="onPropertyAnimationClick"
                 android:text="Property Animation" />
+
+            <Button
+                android:id="@+id/drawable_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="onDrawableAnimationClick"
+                android:text="Drawable Animation" />
+
+            <Button
+                android:id="@+id/view_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="onViewAnimationClick"
+                android:text="View Animation" />
         </LinearLayout>
     </ScrollView>
 

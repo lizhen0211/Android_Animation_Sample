@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".PropertyAnimationActivity" />
         <activity android:name=".ObjectAnimatorActivity" />
-        <activity android:name=".ValueAnimatorActivity"/>
+        <activity android:name=".ValueAnimatorActivity" />
+        <activity android:name=".AnimatorSetActivity"></activity>
     </application>
 
 </manifest>

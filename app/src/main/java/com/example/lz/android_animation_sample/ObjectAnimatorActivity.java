@@ -1,11 +1,14 @@
 package com.example.lz.android_animation_sample;
 
+import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 
 public class ObjectAnimatorActivity extends AppCompatActivity {
 
@@ -46,6 +49,38 @@ public class ObjectAnimatorActivity extends AppCompatActivity {
         PropertyValuesHolder pvhZ = PropertyValuesHolder.ofFloat("scaleY", 1f,
                 0, 1f);
         ObjectAnimator.ofPropertyValuesHolder(view, pvhX, pvhY, pvhZ).setDuration(1000).start();
+    }
+
+    public void removeImage(final View view) {
+        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(view, "alpha", 1, 0.8f, 0.6f, 0.4f, 0.2f);
+        //objectAnimator.setDuration(5000);
+        //objectAnimator.setRepeatCount(5);
+        objectAnimator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                Log.v("", "onAnimationStart");
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                Log.v("", "onAnimationEnd");
+                ViewGroup parent = (ViewGroup) view.getParent();
+                if (parent != null)
+                    parent.removeView(view);
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+                Log.v("", "onAnimationCancel");
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                Log.v("", "onAnimationRepeat");
+            }
+        });
+        objectAnimator.start();
     }
 
 }

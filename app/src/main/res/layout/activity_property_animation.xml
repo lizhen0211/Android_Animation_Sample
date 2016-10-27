@@ -33,6 +33,16 @@
                 android:layout_marginTop="30dp"
                 android:onClick="ValueAnimatorClick"
                 android:text="ValueAnimator" />
+
+            <Button
+                android:id="@+id/animator_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="onAnimatorSetClick"
+                android:text="AnimatorSet" />
         </LinearLayout>
     </ScrollView>
 
