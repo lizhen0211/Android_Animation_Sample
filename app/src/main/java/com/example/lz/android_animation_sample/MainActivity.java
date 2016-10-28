@@ -14,7 +14,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onPropertyAnimationClick(View view) {
-        Intent intent = new Intent(MainActivity.this,PropertyAnimationActivity.class);
+        Intent intent = new Intent(MainActivity.this, PropertyAnimationActivity.class);
+        startActivity(intent);
+    }
+
+    public void onViewAnimationClick(View view) {
+
+    }
+
+    public void onDrawableAnimationClick(View view) {
+
+    }
+
+    public void onLayoutAnimationClick(View view) {
+        Intent intent = new Intent(MainActivity.this, LayoutAnimationActivity.class);
         startActivity(intent);
     }
 }

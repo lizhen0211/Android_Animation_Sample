@@ -19,7 +19,9 @@
         <activity android:name=".ObjectAnimatorActivity" />
         <activity android:name=".ValueAnimatorActivity" />
         <activity android:name=".AnimatorSetActivity" />
-        <activity android:name=".XMLAnimatorActivity"/>
+        <activity android:name=".XMLAnimatorActivity" />
+        <activity android:name=".LayoutAnimationActivity" />
+        <activity android:name=".ViewAnimationActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutAnimationActivity">
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="onAddBtnClick"
+        android:text="addView" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/add_btn"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/add_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container"
+        android:layout_marginTop="10dp"
+        android:onClick="onAddBtn2Click"
+        android:text="addView" />
+
+    <CheckBox
+        android:id="@+id/appearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_btn2"
+        android:text="APPEARING" />
+
+    <CheckBox
+        android:id="@+id/change_appearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appearing"
+        android:text="CHANGE_APPEARING" />
+
+    <CheckBox
+        android:id="@+id/disappearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_appearing"
+        android:text="DISAPPEARING" />
+
+    <CheckBox
+        android:id="@+id/change_disappearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disappearing"
+        android:text="CHANGE_DISAPPEARING" />
+
+    <CheckBox
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_disappearing"
+        android:text="CHANGE" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:columnCount="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change" />
+</RelativeLayout>
