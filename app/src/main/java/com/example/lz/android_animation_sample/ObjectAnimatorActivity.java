@@ -18,6 +18,14 @@ public class ObjectAnimatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_object_animator);
     }
 
+    /*Common properties commonly animated on views include:
+    Property                                                 Description
+    alpha                                                    Fade in or out
+    rotation ,  rotationX ,  rotationY                       Spin or flip
+    scaleX ,  scaleY                                         Grow or shrink
+    x ,  y ,  z                                              Position
+    translationX ,  translationY ,  translationZ  (API 21+)  Offset from Position*/
+
     public void rotateAnimRun(final View view) {
         ObjectAnimator
                 .ofFloat(view, "rotationX", 0.0F, 360.0F)

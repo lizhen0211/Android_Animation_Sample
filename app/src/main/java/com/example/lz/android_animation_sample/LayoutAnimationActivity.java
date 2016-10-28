@@ -1,6 +1,7 @@
 package com.example.lz.android_animation_sample;
 
 import android.animation.LayoutTransition;
+import android.animation.ObjectAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -61,8 +62,12 @@ public class LayoutAnimationActivity extends AppCompatActivity {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             LayoutTransition layoutTransition = new LayoutTransition();
+//            layoutTransition.setAnimator(LayoutTransition.APPEARING, appearingCheckBox.isChecked() ?
+//                    layoutTransition.getAnimator(LayoutTransition.APPEARING) : null);
+            ObjectAnimator animator = ObjectAnimator.ofFloat(this, "rotationY", 0, 360);
+            animator.setDuration(5000);
             layoutTransition.setAnimator(LayoutTransition.APPEARING, appearingCheckBox.isChecked() ?
-                    layoutTransition.getAnimator(LayoutTransition.APPEARING) : null);
+                    animator : null);
             layoutTransition.setAnimator(LayoutTransition.CHANGE_APPEARING, changeAppearingCheckBox.isChecked() ?
                     layoutTransition.getAnimator(LayoutTransition.CHANGE_APPEARING) : null);
             layoutTransition.setAnimator(LayoutTransition.DISAPPEARING, disappearingCheckBox.isChecked() ?
