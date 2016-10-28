@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onViewAnimationClick(View view) {
-
+        Intent intent = new Intent(MainActivity.this, ViewAnimationActivity.class);
+        startActivity(intent);
     }
 
     public void onDrawableAnimationClick(View view) {
